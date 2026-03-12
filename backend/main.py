@@ -7,7 +7,10 @@ from backend.generator import generate_workout
 app = FastAPI()
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=["https://167.99.13.247"],
+  allow_origins=[
+    "https://workout.andrewkelton.com",
+    "https://andrewkelton.com",
+  ],
   allow_methods=["*"],
   allow_headers=["*"]
 )
