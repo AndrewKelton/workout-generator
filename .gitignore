@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# SSH keys - never commit these
+*.pem
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+workout-generator
+workout-generator.pub
+do_workout_generator
+do_workout_generator.pub
