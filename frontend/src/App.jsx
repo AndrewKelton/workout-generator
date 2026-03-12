@@ -47,7 +47,7 @@ function App() {
     setWorkout(null)
     try {
       const params = new URLSearchParams(form)
-      const res = await fetch(`http://localhost:8000/workout?${params}`)
+      const res = await fetch(`/workout?${params}`)
       if (!res.ok) {
         const err = await res.json()
         throw new Error(err.detail || 'Something went wrong')
